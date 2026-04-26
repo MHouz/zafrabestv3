@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
 
   return {
-    base: '/zafrabestv3/',
+    base: './',
 
     plugins: [react(), tailwindcss()],
 

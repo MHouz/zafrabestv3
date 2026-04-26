@@ -22,15 +22,15 @@ import {
 import { motion, AnimatePresence } from "motion/react";
 
 const PRODUCTS = [
-  { id: 1, name: "Smoked Paprika", type: "Earth & Fire", category: "spice", price: "8.50", img: "/images/spices/Red_paprika_powder_202604261749.jpeg" },
-  { id: 2, name: "Wild Turmeric", type: "Roots & Herbs", category: "spice", price: "12.00", img: "/images/spices/Turmeric_powder_in_202604261749.jpeg" },
-  { id: 3, name: "Royal Saffron", type: "Exotic Blends", category: "spice", price: "24.50", img: "/images/spices/Saffron_threads_in_202604261749.jpeg" },
-  { id: 4, name: "Ancient Cumin", type: "Daily Essentials", category: "spice", price: "9.00", img: "/images/spices/Cumin_seeds_in_202604261749.jpeg" },
-  { id: 5, name: "Ceylon Cinnamon", type: "Sweet & Warm", category: "spice", price: "11.00", img: "/images/spices/Cinnamon_sticks_in_202604261749.jpeg" },
-  { id: 6, name: "Signature Collection", type: "The Classics", category: "pack", price: "45.00", img: "/images/packs/Kraft_pouch_labeled_202604261750.jpeg" },
-  { id: 7, name: "Marrakech Explorer Set", type: "Traveler's Choice", category: "pack", price: "55.00", img: "/images/packs/Zafra_Marrakech_Cinnamon_202604261749.jpeg" },
-  { id: 8, name: "Chef's Essentials Pack", type: "Professional Grade", category: "pack", price: "85.00", img: "/images/packs/Kraft_paper_pouch_202604261749 (1).jpeg" },
-  { id: 9, name: "Baker's Joy Set", type: "Sweet Blends", category: "pack", price: "38.00", img: "/images/packs/Kraft_paper_pouch_202604261750.jpeg" },
+  { id: 1, name: "Smoked Paprika", type: "Earth & Fire", category: "spice", price: "8.50", img: "images/spices/Red_paprika_powder_202604261749.jpeg" },
+  { id: 2, name: "Wild Turmeric", type: "Roots & Herbs", category: "spice", price: "12.00", img: "images/spices/Turmeric_powder_in_202604261749.jpeg" },
+  { id: 3, name: "Royal Saffron", type: "Exotic Blends", category: "spice", price: "24.50", img: "images/spices/Saffron_threads_in_202604261749.jpeg" },
+  { id: 4, name: "Ancient Cumin", type: "Daily Essentials", category: "spice", price: "9.00", img: "images/spices/Cumin_seeds_in_202604261749.jpeg" },
+  { id: 5, name: "Ceylon Cinnamon", type: "Sweet & Warm", category: "spice", price: "11.00", img: "images/spices/Cinnamon_sticks_in_202604261749.jpeg" },
+  { id: 6, name: "Signature Collection", type: "The Classics", category: "pack", price: "45.00", img: "images/packs/Kraft_pouch_labeled_202604261750.jpeg" },
+  { id: 7, name: "Marrakech Explorer Set", type: "Traveler's Choice", category: "pack", price: "55.00", img: "images/packs/Zafra_Marrakech_Cinnamon_202604261749.jpeg" },
+  { id: 8, name: "Chef's Essentials Pack", type: "Professional Grade", category: "pack", price: "85.00", img: "images/packs/Kraft_paper_pouch_202604261749 (1).jpeg" },
+  { id: 9, name: "Baker's Joy Set", type: "Sweet Blends", category: "pack", price: "38.00", img: "images/packs/Kraft_paper_pouch_202604261750.jpeg" },
 ];
 
 const REVIEWS = [
@@ -79,7 +79,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
           <button onClick={() => handleViewChange("home")} className="flex items-center gap-2 cursor-pointer outline-none">
             <img 
-              src="/dark logo.png" 
+              src="dark logo.png" 
               alt="Zafra Logo" 
               className="h-10 sm:h-16 w-auto transition-all"
               referrerPolicy="no-referrer"
@@ -151,7 +151,7 @@ export default function App() {
           <section className="relative h-[95vh] flex items-center justify-center text-center overflow-hidden">
             <div className="absolute inset-0 bg-zafra-dark">
               <img 
-                src="/images/backgrounds/Marrakech_spice_souk_202604261753.jpeg" 
+                src="images/backgrounds/Marrakech_spice_souk_202604261753.jpeg" 
                 alt="Marrakech Souk" 
                 className="absolute inset-0 w-full h-full object-cover opacity-40"
               />
@@ -259,7 +259,7 @@ export default function App() {
 
           {/* 5. FLASH SALE BANNER */}
           <section className="relative py-40 flex items-center justify-center my-10 min-h-[500px]">
-            <div className="absolute inset-0 parallax-banner" style={{backgroundImage: "url('/images/backgrounds/Moroccan_spice_market_202604261757.jpeg')"}}>
+            <div className="absolute inset-0 parallax-banner" style={{backgroundImage: "url('images/backgrounds/Moroccan_spice_market_202604261757.jpeg')"}}>
               <div className="absolute inset-0 bg-zafra-dark/60" />
             </div>
             <div className="relative z-10 text-center text-zafra-cream px-6">
@@ -282,10 +282,10 @@ export default function App() {
               <h2 className="text-4xl md:text-5xl font-serif mb-16 tracking-tighter">Curate Your Pantry</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
                 {[
-                  { name: "Heat & Chilis", img: "/images/spices/Red_paprika_powder_202604261749.jpeg" },
-                  { name: "Sweet & Baking", img: "/images/spices/Cinnamon_sticks_in_202604261749.jpeg" },
-                  { name: "Aromatic Herbs", img: "/images/spices/Cumin_seeds_in_202604261749.jpeg" },
-                  { name: "Global Blends", img: "/images/spices/Turmeric_powder_in_202604261749.jpeg" }
+                  { name: "Heat & Chilis", img: "images/spices/Red_paprika_powder_202604261749.jpeg" },
+                  { name: "Sweet & Baking", img: "images/spices/Cinnamon_sticks_in_202604261749.jpeg" },
+                  { name: "Aromatic Herbs", img: "images/spices/Cumin_seeds_in_202604261749.jpeg" },
+                  { name: "Global Blends", img: "images/spices/Turmeric_powder_in_202604261749.jpeg" }
                 ].map((cat, idx) => (
                   <div key={idx} className="group cursor-pointer">
                     <div className="aspect-square rounded-full overflow-hidden mb-6 border-8 border-orange-50 group-hover:border-zafra-gold/20 transition-all p-2">
@@ -354,7 +354,7 @@ export default function App() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center mb-32">
-              <img src="/images/backgrounds/Spice_bowls_on_202604261755.jpeg" alt="Tradition" className="rounded-none shadow-2xl" />
+              <img src="images/backgrounds/Spice_bowls_on_202604261755.jpeg" alt="Tradition" className="rounded-none shadow-2xl" />
               <div>
                 <h2 className="text-3xl font-serif mb-6 italic underline decoration-zafra-gold underline-offset-8">The Zafra Standard</h2>
                 <div className="space-y-8 mt-12">
@@ -433,8 +433,8 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <img src="/images/backgrounds/Spices_scattered_on_202604261753.jpeg" className="rounded-lg shadow-2xl mt-12" alt="Spices" />
-                <img src="/images/backgrounds/Moroccan_spice_background_202604261806.jpeg" className="rounded-lg shadow-2xl" alt="Sacks" />
+                <img src="images/backgrounds/Spices_scattered_on_202604261753.jpeg" className="rounded-lg shadow-2xl mt-12" alt="Spices" />
+                <img src="images/backgrounds/Moroccan_spice_background_202604261806.jpeg" className="rounded-lg shadow-2xl" alt="Sacks" />
               </div>
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-zafra-gold/10 rounded-full blur-3xl z-0" />
             </div>
@@ -497,7 +497,7 @@ export default function App() {
             <div className="col-span-1 md:col-span-1">
               <div className="flex items-center gap-2 mb-6">
                 <img 
-                  src="/dark logo.png" 
+                  src="dark logo.png" 
                   alt="Zafra Logo" 
                   className="h-20 w-auto"
                   referrerPolicy="no-referrer"
